@@ -126,7 +126,7 @@ button.cancel-btn:hover {
 
   .order-summary-card-container {
     max-width: 87.5%;
-    max-height: 25%;
+    max-height: 80%;
   }
 
   .text-content {
