@@ -134,6 +134,11 @@ button.cancel-btn:hover {
 
   .text-content .title {
     font-size: 22.5px;
+    margin-bottom: 15px;
+  }
+  
+  .text-content p.subtitle {
+    margin-bottom: 20px;
   }
 
   .plan-box {
@@ -159,5 +164,6 @@ button.cancel-btn:hover {
 
   button {
     font-size: 12px;
+    margin-top: 20px;
   }
 }
