@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:  hsl(225, 100%, 94%);
+  position: relative;
+}
+
+.order-summary-card-container {
+  background-color: white;
+  max-width: 450px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.text-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.text-content .title {
+  color: hsl(223, 47%, 23%);
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.text-content p.subtitle {
+  color:rgb(150, 150, 150);
+  margin-bottom: 25px;
+}
+
+.plan-box {
+  background-color: hsl(225, 100%, 98%);
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-box-left {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.plan-box-left .plan-content h5.plan-annual {
+  color:hsl(223, 47%, 23%);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.plan-box-left .plan-content p.price-annual {
+  color: rgb(150, 150, 150);
+  font-size: 14px;
+}
+
+.plan-box-right a.change-plan {
+  color:hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.plan-box-right a.change-plan:hover {
+   color: hsl(224, 23%, 55%);
+   text-decoration: none;
+   transition: color 0.25s ease;
+}
+
+button {
+  font-weight: 900;
+  border: none;
+  margin-top: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.proceed-btn {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  padding: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 7.5px 15px hsl(224, 23%, 55%); 
+}
+
+button.proceed-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+  transition: background-color 0.25s ease;
+}
+
+button.cancel-btn {
+  color: hsl(224, 23%, 55%);
+  background-color: transparent;
+}
+
+button.cancel-btn:hover {
+  color:hsl(223, 47%, 23%);
+  transition: color 0.25s ease;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+
+  .order-summary-card-container {
+    max-width: 87.5%;
+  }
+
+  .text-content {
+    padding: 20px;
+  }
+
+  .text-content .title {
+    font-size: 22.5px;
+  }
+
+  .plan-box {
+    padding: 12px;
+  }
+
+  .plan-box-left {
+    gap: 10px;
+    font-size: 12px;
+  }
+  
+  .plan-box-left .plan-content h5.plan-annual {
+    font-size: 12px;
+  }
+  
+  .plan-box-left .plan-content p.price-annual {
+    font-size: 13px;
+  }
+
+  .plan-box-right a.change-plan {
+    font-size: 12px;  
+  }
+
+  button {
+    font-size: 12px;
+  }
+}
